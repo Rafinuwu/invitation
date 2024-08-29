@@ -10,7 +10,7 @@ body {
 .container {
     position: relative;
     width: 400px; /* Adjust the size to make the envelope bigger */
-    height: 240px; /* Adjust the size to make the envelope bigger */
+    height: 400px; /* Adjust the size to make the envelope bigger */
     perspective: 1000px;
 }
 
