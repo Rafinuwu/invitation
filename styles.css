@@ -9,8 +9,8 @@ body {
 
 .container {
     position: relative;
-    width: 200px;
-    height: 120px;
+    width: 400px; /* Adjust the size to make the envelope bigger */
+    height: 240px; /* Adjust the size to make the envelope bigger */
     perspective: 1000px;
 }
 
@@ -31,7 +31,7 @@ body {
     position: absolute;
     top: 5px;
     left: 5px;
-    font-size: 20px;
+    font-size: 40px; /* Increase the heart size to match the larger envelope */
     color: #e3a869;
 }
 
@@ -48,16 +48,16 @@ body {
 }
 
 .letter {
-    width: 50%;
+    width: 50%; /* Adjust the size of the letter to fit within the larger envelope */
     height: auto;
     opacity: 0;
-    transform: translateY(100%) rotate(0deg);
+    transform: translateY(100%) rotate(180deg); /* Rotate the image by 180deg to make it appear upright */
     transition: transform 0.6s, opacity 0.6s;
 }
 
 .envelope.open .letter {
     opacity: 1;
-    transform: translateY(0%) rotate(0deg);
+    transform: translateY(0%) rotate(0deg); /* Ensure the image stays upright when the envelope opens */
 }
 
 .envelope.open {
